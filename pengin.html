@@ -6,25 +6,38 @@
 </head>
 <script>
 var audio = new Audio("./cdn/scarypenginnoises.mp3")
-audio.addEventListener('ended',function(){
-	this.currentTime = 0;
-	this.play();
-},false)
 audio.play()
 setInterval(function(){
 	document.getElementById("dontdodrugskids").src = "./cdn/creepypengin2.png"
-	document.getElementById("dontdodrugskids").style = "min-width:100; max-width:100%; text-align:center; margin:0; display:block;"
 	document.body.style = "background-color:black;"
 	setTimeout(function(){
 		document.getElementById("dontdodrugskids").src = "./cdn/creepypengin3.png"
-		document.getElementById("dontdodrugskids").style = "min-width:100%; max-width:100%; text-align:center; margin:0; display:block;"
 		document.body.style = "background-color:white;"
 	},5)
 },10)
+setTimeout(function(){
+	audio.pause()
+	while (document.firstChild) { document.firstChild.remove() }
+	var html = document.createElement("HTML")
+	var body = document.createElement("BODY")
+	var head = document.createElement("HEAD")
+	var title = document.createElement("TITLE")
+	var video = document.createElement("VIDEO")
+	video.src = "./cdn/rickrolled.mp4"
+	video.autoplay = true
+	video.loop = true
+	video.style = "position: fixed; right:0; bottom: 0; min-width:100%; min-height:100%;"
+	html.appendChild(body)
+	html.appendChild(head)
+	head.appendChild(title)
+	body.appendChild(video)
+	document.appendChild(html)
+	document.title = "You're retarded!"
+},350)
 </script>
 
 <body style="background-color:black;">
-<img src="./cdn/creepypengin2.png" id="dontdodrugskids" style="min-width:100%; min-height:100%; text-align:center; margin:auto; display:block;">
+<img src="./cdn/creepypengin2.png" id="dontdodrugskids" style="min-width:100%; right:0; bottom:0; min-height:100%; text-align:center; margin:auto; display:block;">
 </img>
 </img>
 </body>
