@@ -13,16 +13,18 @@ audio.addEventListener('ended',function(){
 audio.play()
 setInterval(function(){
 	document.getElementById("dontdodrugskids").src = "./cdn/creepypengin2.png"
+	document.getElementById("dontdodrugskids").style = "min-width:100; max-width:100%; text-align:center; margin:0; display:block;"
 	document.body.style = "background-color:black;"
-},50)
-setInterval(function(){
-	document.getElementById("dontdodrugskids").src = "./cdn/creepypengin3.png"
-	document.body.style = "background-color:white;"
-},100)
+	setTimeout(function(){
+		document.getElementById("dontdodrugskids").src = "./cdn/creepypengin3.png"
+		document.getElementById("dontdodrugskids").style = "min-width:100%; max-width:100%; text-align:center; margin:0; display:block;"
+		document.body.style = "background-color:white;"
+	},5)
+},10)
 </script>
 
 <body style="background-color:black;">
-<img src="./cdn/creepypengin2.png" id="dontdodrugskids" style="min-width:100%; min-height:100%; padding:0px;">
+<img src="./cdn/creepypengin2.png" id="dontdodrugskids" style="min-width:100%; min-height:100%; text-align:center; margin:auto; display:block;">
 </img>
 </img>
 </body>
