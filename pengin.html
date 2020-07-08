@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>
+  ​﻿
+</title>
+</head>
+<script>
+var audio = new Audio("./cdn/scarypenginnoises.mp3")
+audio.addEventListener('ended',function(){
+	this.currentTime = 0;
+	this.play();
+},false)
+audio.play()
+setInterval(function(){
+	document.getElementById("dontdodrugskids").src = "./cdn/creepypengin2.png"
+},5)
+setInterval(function(){
+	document.getElementById("dontdodrugskids").src = "./cdn/creepypengin3.png"
+},10)
+</script>
+
+<body style="background-color:black;">
+<img src="./cdn/creepypengin2.png" id="dontdodrugskids" style="min-width:100%; min-height:100%; padding:0px;">
+</img>
+</img>
+</body>
+</html>
