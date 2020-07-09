@@ -1,0 +1,20 @@
+a {
+color:powderblue;
+}
+
+a:hover {
+color:cornflowerblue;
+transition: 0.1s;
+}
+
+.yes {
+text-align: center;
+margin: auto;
+position: absolute;
+}
+
+.yes:hover{
+height: 0%;
+width: 0%;
+transition: 1s;
+}

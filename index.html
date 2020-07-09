@@ -1,23 +1,6 @@
 <html>
-  <style>
-    a {
-      color:powderblue;
-    }
-    .yes {
-      text-align: center;
-      margin: auto;
-      position: absolute;
-    }
-
-    .yes:hover{
-      height: 0%;
-      width: 0%;
-      transition: 1s;
-    }
-  </style>
-
   <script>
-    function cats(){
+    function money(){
       while (document.firstChild) { document.firstChild.remove() }
       var html = document.createElement("HTML")
       var body = document.createElement("BODY")
@@ -35,10 +18,19 @@
       document.appendChild(html)
       document.title = "You're retarded!"
     }
+
+    function inv1(){
+      window.open("https://discord.com/api/oauth2/authorize?client_id=346630749627219968&permissions=335670391&scope=bot","_blank")
+    }
+
+    function inv2(){
+      window.open("https://discord.com/api/oauth2/authorize?client_id=346630749627219968&permissions=8&scope=bot","_blank")
+    }
   </script>
 
   <head>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
     <title>SaxBot Main Page</title>
 
   </head>
@@ -52,7 +44,7 @@
         scary pengin
     </a>
     |
-    <a onclick="cats()" style="text-decoration: underline; cursor:pointer;">
+    <a href="javascript:money()" style="text-decoration: underline; cursor:pointer;">
         $500,000 dollars
     </a>
     |
@@ -64,6 +56,7 @@
     <div id="yes" style="display: flex; align-items:center;  font-size: xx-large">
       <img src="./cdn/saxbotfavicon.png" style="height:17%; width:10%; vertical-align:middle;">
       <p>saxbot is an all-in-one utility bot developed by I̯̖̩t̗z̞̰̻รa̖̜кк͉̼͕u̥̣̮s͚̟̤u͖#0032. articles and shit mainly written by allink. wallpaper made by <a href="https://wallpapercave.com/wp/wp1951699.jpg">wallpapercave</a></p>
+      <p>you can invite the bot <a href="javascript:inv1()">here</a> or if you're lazy, <a href="javascript:inv2()">here</a></p>
     </div>
   </body>
 </html>
