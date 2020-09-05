@@ -1,6 +1,7 @@
 /*inherited from saxos.css*/
   @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
     .header {
+       position: absolute;
        width: 100%;
        z-index: 100000000;
        background-color: #7a7a7a;
