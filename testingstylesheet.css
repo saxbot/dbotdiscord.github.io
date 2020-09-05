@@ -1,0 +1,339 @@
+/*inherited from saxos.css*/
+  @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+    .header {
+       width: 100%;
+       z-index: 100000000;
+       background-color: #7a7a7a;
+       color: white;
+       text-align: center;
+       padding: -5px;
+       animation:popup3 750ms;
+       -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    
+    .unselectable {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+  }
+  
+    /* Tooltip container */
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+  
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+  
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  /* Tooltip arrow */
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+    
+  
+  /* Popup container - can be anything you want */
+  .popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+  
+  
+  /* width */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: 0 0 5px grey; 
+    border-radius: 111px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: orange; 
+    border-radius: 12px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #FF8C00; 
+  }
+    
+  
+  #flapbird,
+  #terminal,
+  #mydiv {
+    position: absolute;
+    z-index: 9;
+    background-color: #ffffff;
+    text-align: center;
+    border: 2px solid black;
+    resize: both;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    min-width: 325px;
+    min-height: 644px;
+    max-width: 1910px;
+    max-height: 840px;
+    animation: popup2 0.45s;
+    transition: transform
+  }
+  @keyframes popup2 {
+    0%{
+      transform: translate(-50%, -50%) scale(0);
+    }
+    10%{
+      transform: translate(-50%, -50%) scale(0.1);
+    }
+    20%{
+      transform: translate(-50%, -50%) scale(0.2);
+    }
+    30%{
+      transform: translate(-50%, -50%) scale(0.3);
+    }
+    40%{
+      transform: translate(-50%, -50%) scale(0.4);
+    } 
+    50%{
+      transform: translate(-50%, -50%) scale(0.5);
+    }
+    60%{
+      transform: translate(-50%, -50%) scale(0.6);
+    }
+    70%{
+      transform: translate(-50%, -50%) scale(0.7);
+    }
+    80%{
+      transform: translate(-50%, -50%) scale(0.8);
+    }
+    90%{
+      transform: translate(-50%, -50%) scale(0.9);
+    }
+    100%{
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+    @keyframes popup3 {
+    0%{
+      transform: scale(0);
+    }
+    10%{
+      transform: scale(0.1);
+    }
+    20%{
+      transform: scale(0.2);
+    }
+    30%{
+      transform: scale(0.3);
+    }
+    40%{
+      transform: scale(0.4);
+    } 
+    50%{
+      transform: scale(0.5);
+    }
+    60%{
+      transform: scale(0.6);
+    }
+    70%{
+      transform: scale(0.7);
+    }
+    80%{
+      transform: scale(0.8);
+    }
+    90%{
+      transform: scale(0.9);
+    }
+    100%{
+      transform: scale(1);
+    }
+  }
+  @keyframes mymove {
+    from {top: 10000px;}
+    to {top: 0px; animation: mymove2 5s;}
+  }
+  #mydivheader {
+    padding: 3px;
+    z-index: 10;
+    background-color: #0e0e0e;
+    color: #fff;
+    font-family: 'Righteous', cursive;
+    -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+  }  
+    body {
+    margin:0px;
+    font-family: 'Source Code Pro';
+      background-image: url('https://wallpaperaccess.com/full/160807.jpg');
+    background-repeat: no-repeat;
+    background-size:1920px 1080px;
+    height: 100%; 
+      margin: 0;
+    overflow: hidden;
+  }
+  * {
+    z-index: 999999999999999;
+    cursor:  url("https://www.tutorialrepublic.com/examples/images/custom.cur"), default;
+      }
+  
+  #context-menu {
+    position: absolute;
+    z-index: 99999999999999;
+    width:150px;
+    background:#1b1a1a;
+    border-radius:5px;
+    transform:scale(0);
+    transform-origin:top left;
+    -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+  }
+  #context-menu.active {
+    transform:scale(1);
+    transition:transform 300ms ease-in-out;
+  }
+  #context-menu .item {
+    padding:8px 2px;
+    font-size:13px;
+    color:#eee;
+  }
+  #context-menu .item:hover {
+    background:#555;
+    font-size:14px;
+    transition: all 0.3s;
+  }
+  #context-menu .item:active {
+    background: green;
+    font-size:14px;
+    transition: all 0.3s;
+  }
+  
+  #context-menu .item i {
+    display:inline-block;
+    margin-right:5px;
+  }
+  #context-menu hr {
+    margin:2px 0px;
+    border-color:#555;
+  }
+  .snap-left{
+    position: fixed;
+       left: 0;
+       bottom: 0;
+       text-align:left;
+  }
+  .snap-rite{
+    position: absolute;
+    top: 0px;
+    right: 0.1px;
+  }
+  .snap-riteforuser{
+    position: absolute;
+    top: 0px;
+    right: 70px;
+  }
+  
