@@ -18,16 +18,14 @@ height: 0%;
 width: 0%;
 transition: 1s;
 }
-body{
-  overflow: overlay;
-}
 ::-webkit-scrollbar {
     width: 8px;
     
 }
   
 ::-webkit-scrollbar-track {
-    box-shadow: 0 0 5px grey; 
+    box-shadow: 0 0 5px grey;
+    background: rgba(0, 0, 0, 0.2);
 }
 
 ::-webkit-scrollbar-thumb {
