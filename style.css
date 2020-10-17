@@ -18,3 +18,21 @@ height: 0%;
 width: 0%;
 transition: 1s;
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+::-webkit-scrollbar-track {
+    box-shadow: 0 0 5px grey; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: grey; 
+    border-radius: 12px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #555555;
+    animation:background 300ms;
+}
