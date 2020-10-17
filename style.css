@@ -24,7 +24,7 @@ transition: 1s;
 }
   
 ::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 ::-webkit-scrollbar-thumb {
