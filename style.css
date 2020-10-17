@@ -18,9 +18,12 @@ height: 0%;
 width: 0%;
 transition: 1s;
 }
-
+body{
+  overflow: overlay;
+}
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 8px;
+    
 }
   
 ::-webkit-scrollbar-track {
