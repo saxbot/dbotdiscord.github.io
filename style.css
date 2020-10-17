@@ -19,8 +19,7 @@ width: 0%;
 transition: 1s;
 }
 ::-webkit-scrollbar {
-    width: 8px;
-    
+    width: 8px;   
 }
   
 ::-webkit-scrollbar-track {
@@ -28,8 +27,7 @@ transition: 1s;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: grey; 
-    border-radius: 12px;
+    background: grey;
 }
   
 ::-webkit-scrollbar-thumb:hover {
