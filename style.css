@@ -24,7 +24,6 @@ transition: 1s;
 }
   
 ::-webkit-scrollbar-track {
-    box-shadow: 0 0 5px grey;
     background: rgba(0, 0, 0, 0.2);
 }
 
