@@ -1,6 +1,7 @@
 a {
 color:powderblue;
 font-size: 48px;
+transition: 0.5s;
 }
 
 a:hover {
