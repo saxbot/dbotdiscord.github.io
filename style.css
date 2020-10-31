@@ -24,6 +24,7 @@ transition: 1s;
 }
 body{
     overflow: overlay;
+    background-attachment: fixed;
 }
 ::-webkit-scrollbar {
     width: 8px;   
