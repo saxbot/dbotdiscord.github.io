@@ -1,0 +1,64 @@
+
+<html>
+
+<script>
+    function freebobux(){
+    while (document.firstChild) { document.firstChild.remove() }
+    var html = document.createElement("HTML")
+    var body = document.createElement("BODY")
+    var head = document.createElement("HEAD")
+    var title = document.createElement("TITLE")
+    var video = document.createElement("VIDEO")
+    video.src = "./cdn/cutecats.mp4"
+    video.autoplay = true
+    video.loop = true
+    video.style = "position: fixed; right:0; bottom: 0; min-width:100%; min-height:100%;"
+    html.appendChild(body)
+    html.appendChild(head)
+    head.appendChild(title)
+    body.appendChild(video)
+    document.appendChild(html)
+    document.title = "Oh No!"
+    }
+</script>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    <title>Articles | Beaver</title>
+
+</head>
+<body style="background-image:url('./cdn/wallpaper.jpg'); background-size: cover; font-size: 50px; color:#cd00cd; font-family: 'Open Sans', sans-serif;">
+    <div id="nav" style="text-align: center;">
+      <a href = "./index.html">
+        SaxBot™️
+    </a>
+    |
+    <a href="javascript:freebobux()" style="cursor:pointer;">
+        Rick Astley
+    </a>
+    |
+    <a href = "./changelog.html">
+        Changelog
+    </a>
+    |
+    <a href = "./invite">
+        Invite
+    </a>
+    |
+    <a href = "./discord">
+        Join our Discord
+    </a>
+    </div>
+    <br>
+    <article style="text-align: center; margin:auto; font-size:xx-large;">
+        <h1>
+            Changelog
+        </h1>  
+    31/10/20<br>SaxBot music service is currently disabled due to issues with the music api, I am planning to rework the api for searching (music api) and get something done by next week. I am a bit unsure if this is going to happen but I'll keep you updated.<br><br>
+    1/11/20<br>SaxBot music service is still disabled, working on bug fixes and music api updates to ensure all bugs with music service are fixed.<br>
+    <p style="font-size:medium">Changelog, latest update 01/11/2020 GMT-8 @ 4:25</p>
+    </article>    
+    </div>
+</body>
+</html>
