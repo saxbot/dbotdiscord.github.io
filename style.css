@@ -26,6 +26,15 @@ body{
     overflow: overlay;
     background-attachment: fixed;
 }
+.footer {
+position: absolute;
+left: 0;
+bottom:0;
+width: 100%;
+z-index: 100000000;
+text-align: center;
+padding: -5px;
+    }
 ::-webkit-scrollbar {
     width: 8px;   
 }
