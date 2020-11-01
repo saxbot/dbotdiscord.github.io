@@ -1,9 +1,37 @@
+<html>
+
+<script>
+   var countdown = 5;
+    function count(){
+    for (i = 0; i < 5; i++) {
+    setTimeout(function(){
+    countdown = countdown - 1
+    document.getElementById("COUNTDOWN").innerHTML = "You will be redirected back to the main page in "+countdown+" seconds.";
+    }, 1000)
+    }
+    window.location.replace("https://saxbot.us.to/")
+    }
+</script>
+
 <head>
-   <meta http-equiv = "refresh" content = "5; url = ./">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    <title>404 | SaxBot</title>
+
 </head>
-<h1 style="text-align: left;">
-<img src="cdn/saxbotfavicon.png" alt="" width="33" height="33" />&nbsp;saxbot&trade;&nbsp;</h1>
-<body>
-<p style="text-align: center;"><strong>404 Page not found.</strong></p>
-<p style="text-align: center;">You will be redirected back to the main page in 5 seconds.</p>
+<body style="background-image:url('./cdn/wallpaper.jpg'); background-size: cover; font-size: 50px; color:#cd00cd; font-family: 'Open Sans', sans-serif;">
+    <div id="nav" style="text-align: center;">
+      <a href = "./">
+        SaxBot™️
+    </a>
+    </div>
+    <br>
+    <article style="text-align: center; margin:auto; font-size:xx-large;">
+        <h1>
+            404 PAGE NOT FOUND
+       </h1>
+       <p id="COUNTDOWN"></p>
+    </article>    
+    </div>
 </body>
+</html>
