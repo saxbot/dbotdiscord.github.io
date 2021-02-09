@@ -5,15 +5,6 @@ var d2 = null;
 do { d2 = new Date(); }
 while(d2-d < ms);
 }
-function tetris() {
-    var nativewindow = document.getElementById("flapbird");
-    nativewindow.style.display = 'block';
-    document.getElementById('tetrisgame').contentWindow.location.replace("./tetris.html")
-}
-function settings(){
-    var nativewindow = document.getElementById("mydiv");
-    nativewindow.style.display = 'block';
-}
 var util = util || {};
 util.toArray = function(list) {
   return Array.prototype.slice.call(list || [], 0);
